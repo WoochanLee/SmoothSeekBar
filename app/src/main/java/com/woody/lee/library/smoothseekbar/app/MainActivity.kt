@@ -1,4 +1,4 @@
-package com.woody.lee.library.smoothseekbar
+package com.woody.lee.library.smoothseekbar.app
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
