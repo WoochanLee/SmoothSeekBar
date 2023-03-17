@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmoothSeekBar">
+        <attr name="barHeight" format="dimension" />
+        <attr name="barColor" format="color" />
+        <attr name="barEdgeRadius" format="dimension" />
+        <attr name="barHorizontalPadding" format="dimension" />
+        <attr name="labelContents" format="string" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="labelTextColor" format="color" />
+        <attr name="labelTopMargin" format="dimension" />
+        <attr name="thumbSrc" format="reference" />
+        <attr name="thumbWidth" format="dimension" />
+        <attr name="thumbHeight" format="dimension" />
+        <attr name="thumbHorizontalPadding" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="progressColor" format="color" />
+        <attr name="animationSpeed" format="integer" />
+    </declare-styleable>
+</resources>

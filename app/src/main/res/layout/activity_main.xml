@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.woody.lee.library.smoothseekbar.SmoothSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginHorizontal="18dp"
+        android:maxHeight="4dp"
+        android:minHeight="4dp"
+        android:thumb="@android:drawable/gallery_thumb"
+        app:animationSpeed="10"
+        app:barColor="@android:color/darker_gray"
+        app:barEdgeRadius="4dp"
+        app:barHeight="8dp"
+        app:barHorizontalPadding="18dp"
+        app:labelContents="3m|6m|9m|12m"
+        app:labelTextColor="@android:color/black"
+        app:labelTextSize="13dp"
+        app:labelTopMargin="50dp"
+        app:max="3"
+        app:progress="2"
+        app:progressColor="@color/black"
+        app:thumbHeight="40dp"
+        app:thumbHorizontalPadding="26dp"
+        app:thumbSrc="@android:drawable/btn_star"
+        app:thumbWidth="40dp" />
+
+</LinearLayout>
