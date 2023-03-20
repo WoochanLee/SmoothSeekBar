@@ -1,5 +1,8 @@
+
 SmoothSeekBar
 ===============
+[![](https://jitpack.io/v/WoochanLee/SmoothSeekBar.svg)](https://jitpack.io/#WoochanLee/SmoothSeekBar)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Smooth Seek Bar for smooth UI / UX.
 
@@ -7,6 +10,17 @@ A Smooth Seek Bar for smooth UI / UX.
 
 Gradle
 ------
+- settings.gradle
+```
+dependencyResolutionManagement {
+    ...
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+- build.gradle
 ```
 dependencies {
     ...
@@ -32,15 +46,15 @@ Usage
         app:max="100"
         app:progress="50"
         app:progressColor="#000000"
+        app:thumbWidth="30dp"
         app:thumbHeight="30dp"
         app:thumbHorizontalPadding="9dp"
-        app:thumbSrc="@android:drawable/star_big_on"
-        app:thumbWidth="30dp" />
+        app:thumbSrc="@android:drawable/star_big_on" />
 ```
 
 Limitations
 -----------
-* This custom view does not inherit from Google `SeekBar`, only inherit `View`.
+* This custom view doesn't inherit `Google SeekBar`, it inherits `View`.
 
 Changelog
 ---------
