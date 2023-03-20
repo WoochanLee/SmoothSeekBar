@@ -4,30 +4,182 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
     tools:context=".MainActivity">
 
     <com.woody.lee.library.smoothseekbar.SmoothSeekBar
+        android:id="@+id/progress_percent"
         android:layout_width="match_parent"
-        android:layout_height="68dp"
-        android:layout_marginHorizontal="18dp"
-        android:maxHeight="4dp"
-        android:minHeight="4dp"
-        android:thumb="@android:drawable/gallery_thumb"
+        android:layout_height="wrap_content"
         app:animationSpeed="10"
-        app:barColor="@android:color/darker_gray"
-        app:barEdgeRadius="4dp"
-        app:barHeight="8dp"
-        app:barHorizontalPadding="18dp"
-        app:labelContents="3m|6m|9m|12m"
-        app:labelTextColor="@android:color/black"
-        app:labelTextSize="13dp"
+        app:barColor="#551293fc"
+        app:barEdgeRadius="0dp"
+        app:barHeight="20dp"
+        app:barHorizontalPadding="5dp"
+        app:labelContents="0%|100%"
+        app:labelTextColor="#1293fc"
+        app:labelTextSize="15dp"
         app:labelTopMargin="50dp"
-        app:max="3"
-        app:progress="2"
-        app:progressColor="@color/black"
-        app:thumbHeight="40dp"
-        app:thumbHorizontalPadding="26dp"
-        app:thumbSrc="@android:drawable/btn_star"
-        app:thumbWidth="40dp" />
+        app:max="100"
+        app:progress="0"
+        app:progressColor="#1293fc"
+        app:thumbHeight="30dp"
+        app:thumbHorizontalPadding="9dp"
+        app:thumbSrc="@drawable/clock"
+        app:thumbWidth="30dp" />
 
+    <TextView
+        android:id="@+id/text_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:textColor="#1293fc"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="50%" />
+
+    <com.woody.lee.library.smoothseekbar.SmoothSeekBar
+        android:id="@+id/progress_star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:animationSpeed="10"
+        app:barColor="#55f1d423"
+        app:barEdgeRadius="6dp"
+        app:barHeight="12dp"
+        app:barHorizontalPadding="15dp"
+        app:labelContents="0|1|2|3|4|5"
+        app:labelTextColor="#f1d423"
+        app:labelTextSize="15dp"
+        app:labelTopMargin="60dp"
+        app:max="5"
+        app:progress="0"
+        app:progressColor="#f1d423"
+        app:thumbHeight="30dp"
+        app:thumbHorizontalPadding="19dp"
+        app:thumbSrc="@drawable/star"
+        app:thumbWidth="30dp" />
+
+    <TextView
+        android:id="@+id/text_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:textColor="#f1d423"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="3 Star" />
+
+    <com.woody.lee.library.smoothseekbar.SmoothSeekBar
+        android:id="@+id/progress_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:animationSpeed="10"
+        app:barColor="#554daf50"
+        app:barEdgeRadius="6dp"
+        app:barHeight="8dp"
+        app:barHorizontalPadding="5dp"
+        app:labelContents="0$|100$"
+        app:labelTextColor="#4daf50"
+        app:labelTextSize="15dp"
+        app:labelTopMargin="50dp"
+        app:max="100"
+        app:progress="0"
+        app:progressColor="#4daf50"
+        app:thumbHeight="30dp"
+        app:thumbHorizontalPadding="13dp"
+        app:thumbSrc="@drawable/money"
+        app:thumbWidth="30dp" />
+
+    <TextView
+        android:id="@+id/text_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:textColor="#4daf50"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="50 $" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.woody.lee.library.smoothseekbar.SmoothSeekBar
+            android:id="@+id/progress_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:animationSpeed="10"
+            app:barColor="#5565afe1"
+            app:barEdgeRadius="6dp"
+            app:barHeight="10dp"
+            app:barHorizontalPadding="5dp"
+            app:labelContents="Jan|Dec"
+            app:labelTextColor="#65afe1"
+            app:labelTextSize="13dp"
+            app:labelTopMargin="50dp"
+            app:max="11"
+            app:progress="0"
+            app:progressColor="#65afe1"
+            app:thumbHeight="30dp"
+            app:thumbHorizontalPadding="15dp"
+            app:thumbSrc="@drawable/month"
+            app:thumbWidth="30dp" />
+
+        <com.woody.lee.library.smoothseekbar.SmoothSeekBar
+            android:id="@+id/progress_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:animationSpeed="10"
+            app:barColor="#55faa01a"
+            app:barEdgeRadius="6dp"
+            app:barHeight="10dp"
+            app:barHorizontalPadding="5dp"
+            app:labelContents="Sun|Wed|Sat"
+            app:labelTextColor="#faa01a"
+            app:labelTextSize="13dp"
+            app:labelTopMargin="50dp"
+            app:max="6"
+            app:progress="0"
+            app:progressColor="#faa01a"
+            app:thumbHeight="30dp"
+            app:thumbHorizontalPadding="15dp"
+            app:thumbSrc="@drawable/day"
+            app:thumbWidth="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#65afe1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="Jan" />
+
+        <TextView
+            android:id="@+id/text_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#faa01a"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="Sun" />
+    </LinearLayout>
 </LinearLayout>

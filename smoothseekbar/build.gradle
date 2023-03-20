@@ -9,7 +9,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        minSdk 19
+        minSdk 21
         targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -44,7 +44,7 @@ afterEvaluate {
 
                 groupId = 'com.woody.lee.library'
                 artifactId = 'SmoothSeekBar'
-                version = '0.1.0'
+                version = '1.0.0'
             }
         }
     }
